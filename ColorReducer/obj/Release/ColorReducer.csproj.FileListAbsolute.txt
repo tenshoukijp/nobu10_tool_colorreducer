@@ -3,3 +3,8 @@ C:\gen_tool_izyins\Release\ColorReducer.exe
 C:\gen_tool_izyins\iZYINS\obj\Release\ColorReducer.csproj.AssemblyReference.cache
 C:\gen_tool_izyins\iZYINS\obj\Release\ColorReducer.csproj.CoreCompileInputs.cache
 C:\gen_tool_izyins\iZYINS\obj\Release\ColorReducer.exe
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\bin\Release\ColorReducer.exe.config
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\bin\Release\ColorReducer.exe
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\obj\Release\ColorReducer.csproj.AssemblyReference.cache
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\obj\Release\ColorReducer.csproj.CoreCompileInputs.cache
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\obj\Release\ColorReducer.exe

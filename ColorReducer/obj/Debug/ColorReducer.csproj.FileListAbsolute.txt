@@ -1,0 +1,10 @@
+C:\Users\master\Desktop\新しいフォルダー\Debug\ColorReducer.exe.config
+C:\Users\master\Desktop\新しいフォルダー\Debug\ColorReducer.exe
+C:\Users\master\Desktop\新しいフォルダー\Debug\ColorReducer.pdb
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\obj\Debug\ColorReducer.csproj.AssemblyReference.cache
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\obj\Debug\ColorReducer.csproj.CoreCompileInputs.cache
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\obj\Debug\ColorReducer.exe
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\obj\Debug\ColorReducer.pdb
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\bin\Debug\ColorReducer.exe.config
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\bin\Debug\ColorReducer.exe
+C:\Users\master\Desktop\新しいフォルダー\ColorReducer\bin\Debug\ColorReducer.pdb
