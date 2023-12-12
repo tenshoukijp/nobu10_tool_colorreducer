@@ -1,0 +1,5 @@
+C:\gen_tool_izyins\iZYINS\obj\Release\ColorReducer.mod.csproj.AssemblyReference.cache
+C:\gen_tool_izyins\iZYINS\obj\Release\ColorReducer.mod.csproj.CoreCompileInputs.cache
+C:\gen_tool_izyins\Release\ColorReducer.mod.exe.config
+C:\gen_tool_izyins\Release\ColorReducer.mod.exe
+C:\gen_tool_izyins\iZYINS\obj\Release\ColorReducer.mod.exe
