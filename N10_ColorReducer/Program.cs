@@ -116,6 +116,17 @@ namespace iZYINS
                 // カレントディレクトリを取得します
                 string currentDirectory = Directory.GetCurrentDirectory();
 
+                string pallatteFile = "";
+                if (System.IO.File.Exists("palette.bmp"))
+                {
+                    pallatteFile = "palette.bmp";
+                }
+                // palletteの綴りミスをカバー
+                else if (System.IO.File.Exists("palatte.bmp"))
+                {
+                    pallatteFile = "palatte.bmp";
+                }
+
                 // カレントディレクトリ内の*.pngファイルを検索します
                 string[] pngFiles = Directory.GetFiles(currentDirectory, "*.png");
 
@@ -125,6 +136,10 @@ namespace iZYINS
                     String dstBmpFile = Path.GetFileNameWithoutExtension(srcPngFile) + ".bmp";
                     // -D2は拡散誤差 -R1は上書き
                     String[] newarg = { srcPngFile, dstBmpFile, "-R1" };
+                    if (String.IsNullOrEmpty(pallatteFile) == false)
+                    {
+                        newarg = new String[] { srcPngFile, dstBmpFile, "-R1", "-F" + pallatteFile };
+                    }   
                     SubMain(newarg);
                 }
             }
