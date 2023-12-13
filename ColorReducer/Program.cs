@@ -24,6 +24,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Diagnostics;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace iZYINS
 {
@@ -121,10 +122,19 @@ namespace iZYINS
                 {
                     pallatteFile = "palette.bmp";
                 }
-                // palletteの綴りミスをカバー
-                else if (System.IO.File.Exists("palatte.bmp"))
+                else
                 {
-                    pallatteFile = "palatte.bmp";
+                    string[] missPalFileNames = {"palatte.bmp", "pallete.bmp", "pallette.bmp" };
+                    foreach (var missName in missPalFileNames)
+                    {
+                        if (System.IO.File.Exists(missName))
+                        {
+                            pallatteFile = missName;
+                            MessageBox.Show($"{missName} が見つかりました。ファイル名の綴りが間違っています。\n正しく palette.bmp としてください。");
+                            break;
+                        }
+
+                    }
                 }
 
                 // カレントディレクトリ内の*.pngファイルを検索します

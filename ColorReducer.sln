@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N10_ColorReducer", "N10_ColorReducer\N10_ColorReducer.csproj", "{C7CC05B3-CB5C-4D4E-8F2B-13ED0B4E818F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorReducer", "ColorReducer\ColorReducer.csproj", "{C7CC05B3-CB5C-4D4E-8F2B-13ED0B4E818F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
