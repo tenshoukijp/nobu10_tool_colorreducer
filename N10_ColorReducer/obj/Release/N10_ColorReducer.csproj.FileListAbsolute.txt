@@ -1,0 +1,10 @@
+C:\nobu10_tool_colorreducer\ColorReducer\bin\Release\M10_ColorReducer.exe.config
+C:\nobu10_tool_colorreducer\ColorReducer\bin\Release\M10_ColorReducer.exe
+C:\nobu10_tool_colorreducer\ColorReducer\obj\Release\N10_ColorReducer.csproj.AssemblyReference.cache
+C:\nobu10_tool_colorreducer\ColorReducer\obj\Release\N10_ColorReducer.csproj.CoreCompileInputs.cache
+C:\nobu10_tool_colorreducer\ColorReducer\obj\Release\M10_ColorReducer.exe
+C:\nobu10_tool_colorreducer\N10_ColorReducer\obj\Release\N10_ColorReducer.csproj.AssemblyReference.cache
+C:\nobu10_tool_colorreducer\N10_ColorReducer\obj\Release\N10_ColorReducer.csproj.CoreCompileInputs.cache
+C:\nobu10_tool_colorreducer\N10_ColorReducer\bin\Release\N10_ColorReducer.exe.config
+C:\nobu10_tool_colorreducer\N10_ColorReducer\bin\Release\N10_ColorReducer.exe
+C:\nobu10_tool_colorreducer\N10_ColorReducer\obj\Release\N10_ColorReducer.exe

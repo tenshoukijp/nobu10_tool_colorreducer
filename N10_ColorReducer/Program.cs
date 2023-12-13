@@ -23,12 +23,15 @@ using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Diagnostics;
+using System.Reflection;
 
 namespace iZYINS
 {
     class ColorReducer
     {
-        const string IZYINSVER = "1.00";
+        // 自分自身のバージョンを保持
+        static string IZYINSVER = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        static int showLicenseCnt = 0;
 
         protected static int changeOptionInt(string s)
         {
@@ -105,12 +108,38 @@ namespace iZYINS
 
         }
 
+        static void Main(String[] args)
+        {
+            // 引数が存在しない場合は、カレントディレクトリの.png を 256色に「拡散誤差」で減色し、.bmp として保存します。上書き保存します
+            if (args.Length == 0)
+            {
+                // カレントディレクトリを取得します
+                string currentDirectory = Directory.GetCurrentDirectory();
 
-        static void Main(string[] args)
+                // カレントディレクトリ内の*.pngファイルを検索します
+                string[] pngFiles = Directory.GetFiles(currentDirectory, "*.png");
+
+                // 所得したファイルの一覧をコンソールに出力します
+                foreach (string srcPngFile in pngFiles)
+                {
+                    String dstBmpFile = Path.GetFileNameWithoutExtension(srcPngFile) + ".bmp";
+                    // -D2は拡散誤差 -R1は上書き
+                    String[] newarg = { srcPngFile, dstBmpFile, "-R1" };
+                    SubMain(newarg);
+                }
+            }
+
+            // 引数が存在するならば、元来のiZYINSのまま
+            else
+            {
+                SubMain(args);
+            }
+        }
+
+        static void SubMain(string[] args)
         {
 
             string iZYINSVersion = "ColorREducer " + IZYINSVER;
-
 
             string s = iZYINSVersion + " : Color Reducer on .NET Framework" + "\n\r" +
                 "Copyright (C) 2005-2008 Y.Nomura all rights reserved." + "\n\r" +
@@ -124,7 +153,11 @@ namespace iZYINS
                 return;
             }
 
-            Console.WriteLine(s);
+            if (showLicenseCnt == 0)
+            {
+                Console.WriteLine(s);
+                showLicenseCnt++;
+            }
 
 
             TiZYINSoption op = new TiZYINSoption();
