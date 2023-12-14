@@ -21,64 +21,63 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 
-namespace iZYINS
-{
-    public class CGraphArray
-    {
-        public void ClearArray()
-        {
-            m_array = null;
-        }
+namespace iZYINS;
 
-    	public int[] m_palette = new int[256];
+public class CGraphArray
+{
+    public void ClearArray()
+    {
+        m_array = null;
+    }
+
+	public int[] m_palette = new int[256];
 	
 
-    	public int PaletteVolume;
+	public int PaletteVolume;
 
-        public Bitmap SrcBMP;
-        public Bitmap DestBMP;
-        public int[] m_array;
+    public Bitmap SrcBMP;
+    public Bitmap DestBMP;
+    public int[] m_array;
 	    public int Height;
 	    public int Width;
 
 	    public bool MakeArray()
-        {
-            PaletteVolume=0;
-            m_array = new int[Width*Height];
-            Bitmap lsrc=SrcBMP;
+    {
+        PaletteVolume=0;
+        m_array = new int[Width*Height];
+        Bitmap lsrc=SrcBMP;
 
-            for (int y=0;y<Height;y++) {
+        for (int y=0;y<Height;y++) {
 	            int yWidth=y*Width;
 	            for (int x=0;x<Width;x++) {
-                    Color pixel = lsrc.GetPixel(x,y);
-                    int ado = pixel.ToArgb();
-                    m_array[x+yWidth]=ado;
+                Color pixel = lsrc.GetPixel(x,y);
+                int ado = pixel.ToArgb();
+                m_array[x+yWidth]=ado;
 
 	            }
-            }
+        }
 
 	        return true;
 
-        }
+    }
 
-        public bool ReverseArray()
-        {
+    public bool ReverseArray()
+    {
 
-            if (PaletteVolume <= 0) return false;
-            return true;
-        }
+        if (PaletteVolume <= 0) return false;
+        return true;
+    }
 
 	    public CGraphArray()
-        {
-            m_array=null;
+    {
+        m_array=null;
 	        Width=0;
 	        Height=0;
 	        for (int i=0;i<256;i++) m_palette[i]=i*256;
-        }
+    }
 
 	    ~CGraphArray()
-        {
-            m_array = null;
-        }
+    {
+        m_array = null;
     }
 }

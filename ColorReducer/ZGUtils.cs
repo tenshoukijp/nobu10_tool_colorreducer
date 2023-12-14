@@ -21,28 +21,27 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 
-namespace ZGUtils
-{
-    class CZGUtils
-    {
-        public static string makeNewFileName(string aSrcFileName)
-        {
-            string lSrcFolder = Path.GetDirectoryName(aSrcFileName);
-            string lSrcFileName = Path.GetFileNameWithoutExtension(aSrcFileName);
-            string lSrcExt = Path.GetExtension(aSrcFileName);
-            int n = 2;
+namespace ZGUtils;
 
-            string lTestFileName = lSrcFolder + Path.DirectorySeparatorChar +
+class CZGUtils
+{
+    public static string makeNewFileName(string aSrcFileName)
+    {
+        string lSrcFolder = Path.GetDirectoryName(aSrcFileName);
+        string lSrcFileName = Path.GetFileNameWithoutExtension(aSrcFileName);
+        string lSrcExt = Path.GetExtension(aSrcFileName);
+        int n = 2;
+
+        string lTestFileName = lSrcFolder + Path.DirectorySeparatorChar +
+                                lSrcFileName + "_(" + n.ToString() + ")" +
+                                lSrcExt;
+        while (File.Exists(lTestFileName))
+        {
+            n++;
+            lTestFileName = lSrcFolder + Path.DirectorySeparatorChar +
                                     lSrcFileName + "_(" + n.ToString() + ")" +
                                     lSrcExt;
-            while (File.Exists(lTestFileName))
-            {
-                n++;
-                lTestFileName = lSrcFolder + Path.DirectorySeparatorChar +
-                                        lSrcFileName + "_(" + n.ToString() + ")" +
-                                        lSrcExt;
-            }
-            return lTestFileName;
         }
+        return lTestFileName;
     }
 }
