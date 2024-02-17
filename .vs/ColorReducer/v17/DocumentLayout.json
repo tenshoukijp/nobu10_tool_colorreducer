@@ -1,0 +1,38 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC\\nobu10_tool_colorreducer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ColorReducer||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CC05B3-CB5C-4D4E-8F2B-13ED0B4E818F}|ColorReducer\\ColorReducer.csproj|c:\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC\\nobu10_tool_colorreducer\\colorreducer\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColorReducer",
+              "DocumentMoniker": "C:\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC\\nobu10_tool_colorreducer\\ColorReducer\\ColorReducer.csproj",
+              "RelativeDocumentMoniker": "ColorReducer\\ColorReducer.csproj",
+              "ToolTip": "C:\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC\\nobu10_tool_colorreducer\\ColorReducer\\ColorReducer.csproj",
+              "RelativeToolTip": "ColorReducer\\ColorReducer.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2023-12-14T03:42:20.594Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
