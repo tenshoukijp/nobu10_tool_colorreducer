@@ -45,12 +45,13 @@ partial class ColorReducer
 
     static bool writeProgress(int n)
     {
+        /*
         if (n >= mProgress + 50)
         {
             mProgress = n;
             Console.Write(" - " + (n / 10).ToString() + " % ");
         }
-
+        */
         return false;
     }
 
@@ -64,20 +65,15 @@ partial class ColorReducer
             "Copyright (C) 2005-2008 Y.Nomura all rights reserved." + "\n\r" +
             "このプログラムはフリー・ソフトウェアです。\nあなたは、Free Software Foundationによって発行されたGNU一般公衆利用許諾契約書(GNU General Public License)のバージョン2、または(あなたの選択により)それ以降のバージョンのいずれかに従い、このプログラムを再配布または変更することができます。\nこのプログラムは有用であることを期待して配布されていますが、いかなる保証もありません。\n市場性または特定の目的への適合性の暗黙の保証さえもありません。\n詳細はGNU一般公衆利用許諾書をご覧ください。\nもしそうでなければ、Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA までご連絡ください。";
 
-
         int n;
         if (args.Length < 1)
         {
-            Console.WriteLine(s);
+            if (Environment.UserInteractive)
+            {
+                Console.WriteLine(s);
+            }
             return;
         }
-
-        if (showLicenseCnt == 0)
-        {
-            Console.WriteLine(s);
-            showLicenseCnt++;
-        }
-
 
         TiZYINSoption op = new TiZYINSoption();
         op.palletnum = 256;

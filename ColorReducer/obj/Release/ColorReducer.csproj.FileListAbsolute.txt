@@ -13,8 +13,8 @@ C:\nobu10_tool_colorreducer\ColorReducer\obj\Release\ColorReducer.csproj.CoreCom
 C:\nobu10_tool_colorreducer\ColorReducer\bin\Release\ColorReducer.exe.config
 C:\nobu10_tool_colorreducer\ColorReducer\bin\Release\ColorReducer.exe
 C:\nobu10_tool_colorreducer\ColorReducer\obj\Release\ColorReducer.exe
-C:\新しいフォルダー\nobu10_tool_colorreducer\ColorReducer\bin\Release\ColorReducer.exe.config
-C:\新しいフォルダー\nobu10_tool_colorreducer\ColorReducer\bin\Release\ColorReducer.exe
-C:\新しいフォルダー\nobu10_tool_colorreducer\ColorReducer\obj\Release\ColorReducer.csproj.AssemblyReference.cache
-C:\新しいフォルダー\nobu10_tool_colorreducer\ColorReducer\obj\Release\ColorReducer.csproj.CoreCompileInputs.cache
-C:\新しいフォルダー\nobu10_tool_colorreducer\ColorReducer\obj\Release\ColorReducer.exe
+C:\新しいフォルダー (3)\nobu10_tool_colorreducer\ColorReducer\bin\Release\ColorReducer.exe.config
+C:\新しいフォルダー (3)\nobu10_tool_colorreducer\ColorReducer\bin\Release\ColorReducer.exe
+C:\新しいフォルダー (3)\nobu10_tool_colorreducer\ColorReducer\obj\Release\ColorReducer.csproj.AssemblyReference.cache
+C:\新しいフォルダー (3)\nobu10_tool_colorreducer\ColorReducer\obj\Release\ColorReducer.csproj.CoreCompileInputs.cache
+C:\新しいフォルダー (3)\nobu10_tool_colorreducer\ColorReducer\obj\Release\ColorReducer.exe
